@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style1.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <video autoplay muted loop id="myVideo">
+  <source src="2.mp4" type="video/mp4">
+  </video>
+<body>
+
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="Logo.jpeg" alt="hello">
+        <div class="text">
+          
+          
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="Logo.jpeg" alt="camel">
+        <div class="text">
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">PROPERTY DETAILS</div>
+          <form action="process_owner.php" method="post">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter PROPERTY TYPE" name="property_type" required>
+              </div>
+
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter PROPERTY PRICE" name="property_price" required>
+              </div>
+
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter LOCATION" name="location" required>
+              </div>
+
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter AVAILABILITY STATUS(0/1)" name="property_availability" required>
+              </div>
+
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+            </div>
+        </form>
+      </div>
+        <!-- <div class="signup-form">
+          <div class="title">Signup</div> -->
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
